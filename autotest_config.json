@@ -1,0 +1,33 @@
+{
+  "description": "Autotest configuration file for reachability detection validation",
+  "version": 1.5,
+  "base_config": {
+    "validate_reachability": true,
+    "reachability": {
+      "check_reachability_status": true,
+      "_comment_check_reachability_status": "Verify that reachability analysis was performed",
+      "expected_reachable_libraries": {
+        "contains": [
+          {
+            "library_name": "bson-1.0.9.tgz",
+            "vulnerabilities": ["CVE-2020-7610"]
+          }
+        ]
+      },
+      "_comment_expected_reachable_libraries": "Expected REACHABLE libraries",
+      "expected_unreachable_libraries": {
+        "contains": [
+          {
+            "library_name": "minimist-1.2.0.tgz",
+            "vulnerabilities": ["CVE-2020-7598"]
+          }
+        ]
+      },
+      "_comment_expected_unreachable_libraries": "Expected UNREACHABLE libraries",
+      "expected_total_reachable_count": { "gte": 1 },
+      "_comment_expected_total_reachable_count": "Minimum number of reachable CVEs expected",
+      "expected_total_unreachable_count": { "gte": 1 },
+      "_comment_expected_total_unreachable_count": "Expected number of unreachable CVEs"
+    }
+  }
+}
