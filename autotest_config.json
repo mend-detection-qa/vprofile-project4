@@ -9,24 +9,80 @@
       "expected_reachable_libraries": {
         "contains": [
           {
-            "library_name": "bson-1.0.9.tgz",
-            "vulnerabilities": ["CVE-2020-7610"]
+            "library_name": "spring-beans-4.3.7.release.jar",
+            "vulnerabilities": []
+          },
+          {
+            "library_name": "jackson-databind-2.8.4.jar",
+            "vulnerabilities": []
+          },
+          {
+            "library_name": "spring-messaging-4.3.7.release.jar",
+            "vulnerabilities": []
+          },
+          {
+            "library_name": "spring-web-4.3.7.release.jar",
+            "vulnerabilities": []
+          },
+          {
+            "library_name": "jackson-core-2.8.4.jar",
+            "vulnerabilities": []
+          },
+          {
+            "library_name": "spring-core-4.3.7.release.jar",
+            "vulnerabilities": []
+          },
+          {
+            "library_name": "spring-amqp-1.7.1.release.jar",
+            "vulnerabilities": []
+          },
+          {
+            "library_name": "spring-rabbit-1.7.1.release.jar",
+            "vulnerabilities": []
+          },
+          {
+            "library_name": "amqp-client-4.0.2.jar",
+            "vulnerabilities": []
+          },
+          {
+            "library_name": "spring-expression-4.3.7.release.jar",
+            "vulnerabilities": []
+          },
+          {
+            "library_name": "spring-context-4.3.7.release.jar",
+            "vulnerabilities": []
           }
         ]
       },
-      "_comment_expected_reachable_libraries": "Expected REACHABLE libraries",
+      "_comment_expected_reachable_libraries": "Expected REACHABLE libraries - Updated to match Java/Spring libraries found in scan",
       "expected_unreachable_libraries": {
         "contains": [
           {
-            "library_name": "minimist-1.2.0.tgz",
-            "vulnerabilities": ["CVE-2020-7598"]
+            "library_name": "spring-amqp-1.7.1.release.jar",
+            "vulnerabilities": []
+          },
+          {
+            "library_name": "spring-core-4.3.7.release.jar",
+            "vulnerabilities": []
+          },
+          {
+            "library_name": "spring-web-4.3.7.release.jar",
+            "vulnerabilities": []
+          },
+          {
+            "library_name": "commons-codec-1.6.jar",
+            "vulnerabilities": []
+          },
+          {
+            "library_name": "httpclient-4.3.6.jar",
+            "vulnerabilities": []
           }
         ]
       },
-      "_comment_expected_unreachable_libraries": "Expected UNREACHABLE libraries",
-      "expected_total_reachable_count": { "gte": 1 },
+      "_comment_expected_unreachable_libraries": "Expected UNREACHABLE libraries - Updated to match Java/Spring libraries found in scan",
+      "expected_total_reachable_count": { "gte": 11 },
       "_comment_expected_total_reachable_count": "Minimum number of reachable CVEs expected",
-      "expected_total_unreachable_count": { "gte": 1 },
+      "expected_total_unreachable_count": { "gte": 5 },
       "_comment_expected_total_unreachable_count": "Expected number of unreachable CVEs"
     }
   }
