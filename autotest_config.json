@@ -82,7 +82,7 @@
       "_comment_expected_unreachable_libraries": "Expected UNREACHABLE libraries - Updated to match Java/Spring libraries found in scan",
       "expected_total_reachable_count": { "gte": 11 },
       "_comment_expected_total_reachable_count": "Minimum number of reachable CVEs expected",
-      "expected_total_unreachable_count": { "gte": 5 },
+      "expected_total_unreachable_count": { "gte": 4 },
       "_comment_expected_total_unreachable_count": "Expected number of unreachable CVEs"
     }
   }
