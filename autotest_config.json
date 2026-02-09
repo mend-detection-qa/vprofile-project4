@@ -10,27 +10,80 @@
         "contains": [
           {
             "library_name": "spring-beans-4.3.7.release.jar",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              "CVE-2022-22965",
+              "CVE-2022-22970"
+            ]
           },
           {
             "library_name": "jackson-databind-2.8.4.jar",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              "CVE-2019-20330",
+              "CVE-2019-17531",
+              "CVE-2019-17267",
+              "CVE-2019-16943",
+              "CVE-2019-16942",
+              "CVE-2019-14892",
+              "CVE-2019-14540",
+              "CVE-2018-7489",
+              "CVE-2018-14719",
+              "CVE-2018-14718",
+              "CVE-2018-11307",
+              "CVE-2017-7525",
+              "CVE-2020-35728",
+              "CVE-2020-35491",
+              "CVE-2020-35490",
+              "CVE-2019-10202",
+              "CVE-2018-5968",
+              "CVE-2022-42003",
+              "CVE-2020-36518",
+              "CVE-2020-25649",
+              "CVE-2019-12086",
+              "CVE-2018-12023",
+              "CVE-2018-12022",
+              "CVE-2019-12814",
+              "CVE-2019-12384"
+            ]
           },
           {
             "library_name": "spring-messaging-4.3.7.release.jar",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              "CVE-2018-1275",
+              "CVE-2018-1270",
+              "CVE-2018-1257"
+            ]
           },
           {
             "library_name": "spring-web-4.3.7.release.jar",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              "CVE-2024-22259",
+              "CVE-2024-22243",
+              "CVE-2018-15756",
+              "CVE-2020-5421",
+              "CVE-2024-38828",
+              "CVE-2024-38809",
+              "CVE-2024-38820"
+            ]
           },
           {
             "library_name": "jackson-core-2.8.4.jar",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              "CVE-2025-52999",
+              "WS-2018-0124",
+              "CVE-2025-49128"
+            ]
           },
           {
             "library_name": "spring-core-4.3.7.release.jar",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              "CVE-2025-41249",
+              "CVE-2018-15756",
+              "CVE-2018-1272",
+              "CVE-2018-1257",
+              "CVE-2024-38828",
+              "CVE-2022-22970",
+              "CVE-2018-1199"
+            ]
           },
           {
             "library_name": "spring-amqp-1.7.1.release.jar",
@@ -46,11 +99,15 @@
           },
           {
             "library_name": "spring-expression-4.3.7.release.jar",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              "CVE-2024-38808"
+            ]
           },
           {
             "library_name": "spring-context-4.3.7.release.jar",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              "CVE-2025-22233"
+            ]
           }
         ]
       },
@@ -59,31 +116,52 @@
         "contains": [
           {
             "library_name": "spring-amqp-1.7.1.release.jar",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              "CVE-2017-8045",
+              "CVE-2018-11087"
+            ]
           },
           {
             "library_name": "spring-core-4.3.7.release.jar",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              "CVE-2018-11040"
+            ]
           },
           {
             "library_name": "spring-web-4.3.7.release.jar",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              "CVE-2018-11040"
+            ]
           },
           {
             "library_name": "commons-codec-1.6.jar",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              "WS-2019-0379"
+            ]
           },
           {
             "library_name": "httpclient-4.3.6.jar",
             "vulnerabilities": []
+          },
+          {
+            "library_name": "amqp-client-4.0.2.jar",
+            "vulnerabilities": [
+              "CVE-2018-11087"
+            ]
+          },
+          {
+            "library_name": "spring-rabbit-1.7.1.release.jar",
+            "vulnerabilities": [
+              "CVE-2018-11087"
+            ]
           }
         ]
       },
       "_comment_expected_unreachable_libraries": "Expected UNREACHABLE libraries - Updated to match Java/Spring libraries found in scan",
-      "expected_total_reachable_count": { "gte": 11 },
-      "_comment_expected_total_reachable_count": "Minimum number of reachable CVEs expected",
-      "expected_total_unreachable_count": { "gte": 4 },
-      "_comment_expected_total_unreachable_count": "Expected number of unreachable CVEs"
+      "expected_total_reachable_count": { "gte": 48 },
+      "_comment_expected_total_reachable_count": "Minimum number of reachable CVEs expected - 48 reachable vulnerabilities from security report",
+      "expected_total_unreachable_count": { "gte": 5 },
+      "_comment_expected_total_unreachable_count": "Expected number of unreachable CVEs - 5 unreachable vulnerabilities from security report"
     }
   }
 }
