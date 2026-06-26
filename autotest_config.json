@@ -115,49 +115,26 @@
       "expected_unreachable_libraries": {
         "contains": [
           {
-            "library_name": "spring-amqp-1.7.1.release.jar",
-            "vulnerabilities": [
-              "CVE-2017-8045",
-              "CVE-2018-11087"
-            ]
-          },
-          {
-            "library_name": "spring-core-4.3.7.release.jar",
-            "vulnerabilities": [
-              "CVE-2018-11040"
-            ]
-          },
-          {
-            "library_name": "spring-web-4.3.7.release.jar",
-            "vulnerabilities": [
-              "CVE-2018-11040"
-            ]
-          },
-          {
-            "library_name": "commons-codec-1.6.jar",
+            "library_name": "commons-codec",
             "vulnerabilities": [
               "WS-2019-0379"
             ]
           },
           {
-            "library_name": "httpclient-4.3.6.jar",
-            "vulnerabilities": []
-          },
-          {
-            "library_name": "amqp-client-4.0.2.jar",
+            "library_name": "httpclient",
             "vulnerabilities": [
-              "CVE-2018-11087"
+              "WS-2017-3734"
             ]
           },
           {
-            "library_name": "spring-rabbit-1.7.1.release.jar",
+            "library_name": "spring-rabbit",
             "vulnerabilities": [
               "CVE-2018-11087"
             ]
           }
         ]
       },
-      "_comment_expected_unreachable_libraries": "Expected UNREACHABLE libraries - Updated to match Java/Spring libraries found in scan",
+      "_comment_expected_unreachable_libraries": "Expected UNREACHABLE libraries. Uses clean Maven artifactId form (no .jar/version suffix) so it matches Mend's dep-tree fallback, which is the authoritative source when the GitHub-summary vuln table truncates unreachable rows. Only libs whose CVEs are ALL unreachable in the scan belong here; libs with any reachable CVE (spring-amqp/core/web, amqp-client) live in expected_reachable_libraries.",
       "expected_total_reachable_count": { "gte": 47 },
       "_comment_expected_total_reachable_count": "Minimum number of reachable CVEs expected - 48 reachable vulnerabilities from security report",
       "expected_total_unreachable_count": { "gte": 2 },
